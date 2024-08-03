@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple Interest Calculator!"
+            android:textSize="23sp"
+            android:layout_marginLeft="50sp"
+            android:textStyle="bold"  />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result : "
+            android:textSize="23sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="30sp"
+            android:layout_marginLeft="120sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Principal Amount(Rs. 000)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rate(%)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time(Years)"
+            android:inputType="numberDecimal"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp">
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:backgroundTint="@color/green"
+                android:text="Calculate"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:backgroundTint="@color/green"
+                android:text="Reset"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
